@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Sign-Up Today!</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <br>
+
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <h1 class="text-center">Employee Data Management!</h1>
+            <h2 class="text-center">A Comprehensive Directory of Employee Billable Hours</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Current Employees</h3>
+                        <div class="panel-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Employee Name</th>
+                                        <th scope="col">Rolet</th>
+                                        <th scope="col">Start Date</th>
+                                        <th scope="col">Months Worked</th>
+                                        <th scope="col">Monthly Rate ($)</th>
+                                        <th scope="col">Total Billed ($)</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <strong>Add Employee</strong>
+                </h3>
+            </div>
+            <div class="panel-body">
+
+                <form>
+                    Employe Name:
+                    <br>
+                    <input id="employeeName-input" class="form-control" type="text" name="Employee Name">
+                    <br> Role:
+                    <br>
+                    <input id="role-input" class="form-control" type="text" name="Role">
+                    <br> Start Date:
+                    <br>
+                    <input id="startDate-input" class="form-control" type="text" name="Start Date (DD/MM/YY - ex: 01/01/89)">
+                    <br> Rate Input:
+                    <br>
+                    <input id="monthlyRate-input" class="form-control" type="text" name="Monthly Rate">
+                    <br>
+                    <button class="btn btn-primary" id="add-employee-btn" type="submit">Submit</button>
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+
+        <!-- Link to app javascript  -->
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/data.js"></script>
+
+
+</body>
+
+</html>
